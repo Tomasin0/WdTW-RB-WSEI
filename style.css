@@ -16,3 +16,25 @@ section {
     background-position: center center;
     background-size: cover;
 }
+
+#main {
+    margin: auto;
+    width: 1000px;
+    justify-content: center;
+
+}
+
+#logo   {
+    /* width: 100%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    display: table; */
+
+    display: inline-block;
+}
+
+h1  {
+    width: 0;
+    min-width: 100%;
+}
