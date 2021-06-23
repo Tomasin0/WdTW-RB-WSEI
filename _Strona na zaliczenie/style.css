@@ -81,9 +81,46 @@ nav a:hover::before {
     width: 100%;
 }
 
-.one {
-    height: 9999px;
-    background-color: black;
+#home {
+    height: 500px;
+    background-color: white;
+    padding-top: 90px;
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.texthome {
+    width: 50%;
+    justify-content: left;
+    height: 500px;
+    text-align: center;
+    margin: auto 0;
+    padding-top: 50px;
+}
+
+.imagehome {
+    height: 500px;
+    width: 50;
+    justify-content: right;
+    padding: auto;
+
+}
+
+#about {
+    height: 500px;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#contact {
+    height: 500px;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .footer {
