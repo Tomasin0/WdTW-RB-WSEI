@@ -1,161 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+}
+
 body {
-    margin: 0%;
-    background: white;
-    font-family: 'Big Shoulders Stencil Display', cursive;
-    font-weight: 300;
+    padding: 0 10vw;
 }
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 
 header {
-    background:yellow;
-    position: fixed;
     width: 100%;
-    padding-bottom: 10px;
-}
-
-header::after {
-content: '';
-display: table;
-clear: both;
-}
-
-.logo {
-    float: left;
-    padding: 10px 0;
-}
-
-.navlogo {
-    margin-top: 0;
-    padding-top: 23px;
-}
-
-nav {
-    float: right;
-}
-
-nav ul {
-    margin: 0%;
-    padding: 0%;
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 23px;
-
-    position: relative;
-}
-
-nav a {
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 30px;
-}
-
-nav a:hover {
-    color: orange;
-}
-
-nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    width: 100%;
-    background-color: black;
-
-    position: absolute;
-    top: 0;
-    width: 0%;
-    transition: all ease-in-out 250ms;
-
-}
-
-nav a:hover::before {
-    width: 100%;
-}
-
-#home {
-    height: 500px;
-    background-color: white;
-    padding-top: 90px;
-    display: flex;
-    width: 100vw;
-    justify-content: space-around;
-}
-
-.texthome {
-    width: 50%;
-    justify-content: left;
-    height: 500px;
-    text-align: center;
-    margin: auto 0;
-    padding-top: 50px;
-}
-
-.imagehome {
-    height: 500px;
-    width: 50;
-    justify-content: right;
-    padding: auto;
-
-}
-
-#about {
-    height: 500px;
-    background-color: white;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-#contact {
-    height: 500px;
-    background-color: white;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.footer {
-    background: yellow;
-    width: 100%;
-    margin: 0 auto;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.containerfooter {
-    width: 80%;
-    margin: 0 auto;
+    height: 100px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
-    justify-content: space-between;
 }
 
-.media {
-    padding: 10px 0;
-    margin-top: 21px;
-
-
+.menu {
+    padding: 15px 0 15px 15px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-.copyrightfooter {
+header a:hover {
+    color: #00fa9a;
+}
+
+header img {
+    height: 130%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.onas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    height: 500px;
+}
+
+.slide {
+    flex-basis: 50%;
+}
+
+.slide img {
+    max-height: 50vh;
+}
+
+.bump12 {
+    flex-basis: 50%;
+}
+
+.title {
+    color: #00fa9a;
+}
+
+.nowe {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.opis {
+    flex-basis: 50%;
+    padding-right: vw;
+    font-size: large;
+}
+
+.wideo {
+    flex-basis: 50%;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.sklep {}
+
+.baner {
+    background-color: #00fa9a;
+    color: white;
+    width: max-content;
+    height: max-content;
+    padding: 0px 15px 0px 19px;
+    font-size: 4em;
+    margin-left: 66%;
+    margin-bottom: 25px
+}
+
+.przyszlysklep {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.produkt {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3vw;
+    font-size: medium;
+}
+
+.produkt img {
+    max-width: 15vw;
+}
+
+.produkt span {
+    max-width: 15vw;
+    font-weight: 500;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+
+/* ////////////Footer///////////// */
+
+footer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.kontakt {
+    background-color: #00fa9a;
+    width: max-content;
+    height: max-content;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.nr_konta span {
+    color: #00fa9a;
+    background-color: black;
+    width: max-content;
+    font-size: 0.9em;
+}
+
+.socjale {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.soc {
+    height: 30px;
+    width: 30px;
+    padding: auto;
+}
+
+.prawa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footerlogo img {
+    width: 5vw;
+}
+
+.footertekst {
+    font-size: 10px;
+    margin-left: -27%;
+}
+
+.empty {
+    width: 24%;
+    visibility: hidden;
+}
+
+
+/* ////////////SLAJDER///////////// */
+
+#bart {
+
+}
+.slajder-grzenia {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.slideshow-container {
+    max-width: 20vw;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+}
+
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
     text-align: center;
 }
 
-span {
-    float: left;
-    padding: 10px 0;
-    margin-top: 21px;
-    font-size: 30px;
-    font-weight: 600;
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@media (max-width: 861px) {
+    /*hamburger menu*/
 }
