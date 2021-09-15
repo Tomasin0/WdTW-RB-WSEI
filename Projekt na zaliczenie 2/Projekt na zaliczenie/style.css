@@ -1,0 +1,315 @@
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier Prime', monospace;
+}
+
+body {
+    padding: 0 10vw;
+}
+
+header img {
+    height: 130%;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+header a:hover {
+    color: #00fa9a;
+}
+
+.menu {
+    padding: 15px 0 15px 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.onas {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    height: max-content;
+}
+
+.title {
+    color: #00fa9a;
+}
+
+/* 
+.title:hover   {
+    color: black;
+}
+*/
+
+.bump12 {
+    flex-basis: 50%;
+    padding-top: 10%;
+    cursor: default;
+}
+
+.slider {
+    flex-basis: 50%;
+    max-width: 50%;
+    padding-right: 25px;
+}
+
+.nowe {
+    margin-top:50px;
+    height: max-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.opis {
+    padding-top: 10%;
+    flex-basis: 50%;
+    font-size: large;
+    cursor: default;
+}
+
+.wideo {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    max-height: fit-content
+}
+
+.video {
+    width: 90%;
+    height: 25vw;
+    min-height: 21em;
+}
+
+.sklep {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.baner {
+    background-color: #00fa9a;
+    color: white;
+    width: max-content;
+    height: max-content;
+    padding: 0px 15px 0px 19px;
+    font-size: 4vw;
+    margin-bottom: 25px;
+    cursor: default;
+}
+
+.baner:hover    {
+    background-color: rgb(0, 0, 0);
+}
+
+.przyszlysklep {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.produkt img {
+    max-width: 15vw;
+}
+
+.produkt span {
+    max-width: 15vw;
+    font-weight: 500;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-size: 1.3vw;
+}
+
+.produkt {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3vw;
+    font-size: medium;
+}
+
+.divspan    {
+    max-width: 15vw;
+    margin-top: 1vh;
+}
+
+.divspan a :hover {
+    background-color: #00fa9a;
+}
+
+.divimg{
+    padding: 0;
+    cursor: default;
+}
+
+.divimg a {
+    cursor: default;
+}
+
+.divimg a img {
+    transition-duration: 1s;
+    margin: 0 auto;
+    cursor: default;
+}
+
+.divimg img:hover {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    z-index: 0;
+}
+
+
+
+
+
+.footer1 {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footerlogo img {
+    width: 5vw;
+
+}
+
+.prawa {
+    display: flex;
+    justify-content: center;
+}
+
+.soc {
+    width: 35px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+
+
+.socjale {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+
+.nr_konta span {
+    color: #00fa9a;
+    background-color: black;
+    font-size: 0.9em;
+}
+
+.kontakt {
+    background-color: #00fa9a;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+
+.empty {
+    width: 28%;
+    visibility: hidden;
+}
+
+.footertekst {
+    margin-top: 5px;
+    padding-top: 5px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    border-radius: 25px 25px 0px 0px;
+    cursor: default;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.box {
+    background: #000000;
+    left: -304px;
+    padding: 4px 4px 4px 0px;
+    position: fixed;
+    top: 550px;
+    transition: transform 0.4s;
+    width: 300px;
+}
+
+.box:hover {
+    transform: translateX(304px);
+}
+
+.box .box__content {
+    background: #fff;
+    min-height: 148px;
+    padding: 10px;
+    position: relative;
+}
+
+.box .box__title {
+    background: rgb(0, 0, 0);
+    color: white;
+
+    border-width: 0px 4px 4px;
+    cursor: default;
+
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    right: -96px;
+    text-align: center;
+    top: 59px;
+    transform: rotate(-90deg);
+    width: 156px;
+}
+.swiper {
+    width: 100%;
+    max-width: 676px;
+    height: 386px;
+   
+}
+.img-slig {
+    width: 100%;
+}
+.swipper-block {
+    display: none !important;
+    color: white !important;
+}
+.swiper:hover > .swipper-block {
+    display: block !important;
+}
+.swiper-slide {
+    display: flex;
+    align-items: center;
+}
+
+.swiper-scrollbar {
+    visibility: hidden;
+}
