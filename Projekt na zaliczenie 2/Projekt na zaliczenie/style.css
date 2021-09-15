@@ -58,13 +58,11 @@ a {
 */
 
 .bump12 {
-    flex-basis: 50%;
     padding-top: 10%;
     cursor: default;
 }
 
 .slider {
-    flex-basis: 50%;
     max-width: 50%;
     padding-right: 25px;
 }
@@ -289,6 +287,11 @@ a {
     transform: rotate(-90deg);
     width: 156px;
 }
+
+
+
+
+
 .swiper {
     width: 100%;
     max-width: 676px;
